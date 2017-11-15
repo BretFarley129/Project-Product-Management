@@ -1,0 +1,10 @@
+<h1>Product List</h1>
+<div *ngFor="let i of products" class="item">
+  <img src="{{i.url}}" alt="woops" height="300px" width="300px;">
+  <h3>{{i.title}}</h3>
+  <h4>${{i.price}}</h4>
+  <button style="width:300px; height:20px; background-color: orange"><a [routerLink]="['edit',i.index]">Edit</a></button>
+  <br><br>
+  <form (submit)="delete(i.index)">
+    <input type="submit" style="width:300px; height:20px; background-color: red" value="Delete">
+  </form>

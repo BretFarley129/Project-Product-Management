@@ -1,0 +1,10 @@
+#wrapper{
+    margin: 0px auto;
+    width: 1010px;
+    text-align: center;
+}
+#display{
+    min-height: 550px;
+    width: 1000px;
+    border: 1px solid black;
+}

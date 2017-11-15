@@ -1,0 +1,21 @@
+<h1>Edit Item with ID# {{current}}</h1>
+<form style="text-align: right; margin: 100px;" (submit)="onSubmit()">
+    <table >
+      <tr>
+        <td>Title</td>
+        <td><input type="input" name="title"  [(ngModel)]="product.title" #title="ngModel" value="product.title"></td>
+      </tr>
+      <tr>
+        <td>Price</td>
+        <td><input type="input" name="price" [(ngModel)]="product.price" #price="ngModel" value="product.price"></td>
+      </tr>
+      <tr>
+        <td>Image url</td>
+        <td><input type="input" name="url" [(ngModel)]="product.url" #url="ngModel" value="product.url"></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><input type="submit" value="UPDATE"></td>
+      </tr>
+    </table>
+  </form>

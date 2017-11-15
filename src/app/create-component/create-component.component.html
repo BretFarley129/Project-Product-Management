@@ -1,0 +1,23 @@
+<div style="text-align: center">
+  <h1>Create a New Product</h1>
+  <form style="text-align: right; margin: 100px;" (submit)="onSubmit()">
+    <table >
+      <tr>
+        <td>Title</td>
+        <td><input type="input" name="title"  [(ngModel)]="product.title" #title="ngModel"></td>
+      </tr>
+      <tr>
+        <td>Price</td>
+        <td><input type="input" name="price" [(ngModel)]="product.price" #price="ngModel"></td>
+      </tr>
+      <tr>
+        <td>Image url</td>
+        <td><input type="input" name="url" [(ngModel)]="product.url" #url="ngModel"></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><input type="submit" value="CREATE"></td>
+      </tr>
+    </table>
+  </form>
+</div>
